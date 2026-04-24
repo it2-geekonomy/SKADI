@@ -3,10 +3,10 @@ import Image from "next/image";
 export default function Testimonial() {
   return (
     <div>
-      <div className="max-w-[1120px] mx-auto px-6 md:px-14 py-[100px]">
-        <div className="grid grid-cols-1 md:grid-cols-2 min-h-[500px] overflow-hidden rounded-2xl">
+      <div className="max-w-[1120px] mx-auto py-10 px-6 md:px-14">
+        <div className="grid grid-cols-1 md:grid-cols-2 min-h-[1100px] md:min-h-[700px] overflow-hidden rounded-2xl">
           {/* Image side */}
-          <div className="relative overflow-hidden bg-obsidian min-h-[400px]">
+          <div className="relative overflow-hidden bg-obsidian min-h-[1000px] md:min-h-[600px]">
             <Image
               src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=800&q=80&auto=format&fit=crop"
               alt="Business professional"
@@ -17,7 +17,7 @@ export default function Testimonial() {
           </div>
 
           {/* Content side */}
-          <div className="bg-forest px-14 py-[72px] flex flex-col justify-center">
+          <div className="bg-forest px-14 py-[72px] flex flex-col justify-center min-h-[1000px] md:min-h-[600px]">
             <div className="font-bebas text-[80px] text-[rgba(245,240,232,0.1)] leading-[0.8] mb-5">
               &ldquo;
             </div>

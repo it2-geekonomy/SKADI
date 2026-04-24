@@ -7,7 +7,8 @@
 .yarn/install-state.gz
 
 # package management
-
+package.json
+package-lock.json
 yarn.lock
 pnpm-lock.yaml
 pnpm-workspace.yaml
