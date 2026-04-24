@@ -17,7 +17,7 @@ export default function Testimonial() {
           </div>
 
           {/* Content side */}
-          <div className="bg-forest px-14 py-[72px] flex flex-col justify-center min-h-[1000px] md:min-h-[600px]">
+          <div className="bg-forest px-14 py-[72px] flex flex-col justify-center min-h-[500px] md:min-h-[600px]">
             <div className="font-bebas text-[80px] text-[rgba(245,240,232,0.1)] leading-[0.8] mb-5">
               &ldquo;
             </div>
