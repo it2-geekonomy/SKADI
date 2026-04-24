@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useCallback } from "react";
+import { useState } from "react";
 
 function fmt(n: number) {
   return "$" + Math.round(n).toLocaleString();
@@ -20,22 +20,24 @@ export default function ROICalculator() {
   return (
     <div className="bg-forest" id="roi">
       <div className="max-w-[1120px] mx-auto px-6 md:px-14 py-[100px]">
-        <p className="text-[10px] font-semibold tracking-[0.18em] uppercase text-gold mb-4">
-          ROI Calculator
-        </p>
-        <h2 className="font-bebas text-[clamp(44px,5vw,64px)] leading-none tracking-[0.04em] text-parchment mb-4">
-          See what missed calls
-          <br />
-          are costing you.
-        </h2>
-        <p className="text-[16px] text-[rgba(245,240,232,0.45)] font-light max-w-[480px] leading-[1.7] mb-14">
-          Move the sliders to match your business. See your real numbers
-          instantly.
-        </p>
-
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
-          {/* Sliders */}
+          {/* Left — heading + sliders */}
           <div className="flex flex-col gap-8">
+            <div>
+              <p className="text-[10px] font-semibold tracking-[0.18em] uppercase text-gold mb-4">
+                ROI Calculator
+              </p>
+              <h2 className="font-bebas text-[clamp(44px,5vw,64px)] leading-none tracking-[0.04em] text-parchment mb-4">
+                See what missed calls
+                <br />
+                are costing you.
+              </h2>
+              <p className="text-[16px] text-[rgba(245,240,232,0.45)] font-light max-w-[480px] leading-[1.7]">
+                Move the sliders to match your business. See your real numbers
+                instantly.
+              </p>
+            </div>
+
             {[
               {
                 label: "Calls received per month",
@@ -87,7 +89,7 @@ export default function ROICalculator() {
             ))}
           </div>
 
-          {/* Results */}
+          {/* Right — results panel, starts at top */}
           <div className="bg-[rgba(245,240,232,0.05)] border border-[rgba(245,240,232,0.08)] rounded-xl p-10 flex flex-col gap-7">
             {[
               {
