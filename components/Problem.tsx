@@ -47,18 +47,18 @@ export default function Problem() {
           that walked straight to your competitor — and never came back.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-[72px] mt-16 items-start">
+        <div className="mt-16">
           {/* Stats */}
-          <div className="flex flex-col">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-[72px]">
             {stats.map((s, i) => (
               <div
                 key={i}
-                className={`py-9 border-b border-stone ${i === 0 ? "pt-0" : ""} ${i === stats.length - 1 ? "border-b-0" : ""}`}
+                className="p-6 bg-[rgba(255,255,255,0.3)] rounded-lg"
               >
                 <div className="font-bebas text-[72px] text-forest tracking-[0.02em] leading-none mb-2">
                   {s.num}
                 </div>
-                <div className="text-[15px] text-mid font-light leading-[1.5] max-w-[260px]">
+                <div className="text-[15px] text-mid font-light leading-[1.5]">
                   {s.label}
                 </div>
               </div>
@@ -66,11 +66,11 @@ export default function Problem() {
           </div>
 
           {/* Pain points */}
-          <div className="flex flex-col">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {pains.map((p, i) => (
               <div
                 key={i}
-                className={`flex gap-[18px] items-start py-7 border-b border-stone ${i === 0 ? "pt-0" : ""} ${i === pains.length - 1 ? "border-b-0" : ""}`}
+                className="flex gap-[18px] items-start p-6 bg-[rgba(255,255,255,0.3)] rounded-lg"
               >
                 <div className="w-10 h-10 flex-shrink-0 bg-[rgba(28,69,50,0.08)] rounded-lg flex items-center justify-center mt-0.5">
                   {p.icon}
