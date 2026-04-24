@@ -14,7 +14,7 @@ export default function CTA() {
         }}
       />
 
-      <div className="relative z-10 text-center px-6 md:px-14 py-[100px] w-full">
+      <div className="max-w-[1120px] mx-auto px-6 md:px-14 py-[100px] w-full relative z-10 text-center">
         <h2 className="font-bebas text-[clamp(56px,8vw,104px)] tracking-[0.04em] leading-[0.95] text-parchment mb-5">
           Never miss
           <br />

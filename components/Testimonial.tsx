@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Testimonial() {
   return (
     <div>
-      <div className="max-w-[1120px] mx-auto px-6 md:px-14">
+      <div className="max-w-[1120px] mx-auto px-6 md:px-14 py-[100px]">
         <div className="grid grid-cols-1 md:grid-cols-2 min-h-[500px] overflow-hidden rounded-2xl">
           {/* Image side */}
           <div className="relative overflow-hidden bg-obsidian min-h-[400px]">
